@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Prototipo web</title>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <div class="cabecera content">
+                <div class="cabecera logo"><img src="" alt="Logo"/></div>
+                <div class="cabecera navegacion">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="/pages/coleccion.html">Colección</a></li>
+                        <li><a href="/pages/blog.html">Blog</a></li>
+                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                        <li><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
+                    </ul>    
+                </nav>
+                </div>
+                <div class="cabecera redes">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook fa-sm"></i></a></li> <!--facebook -->
+                        <li><a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a></li> <!-- twitter -->
+                        <li><a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a></li>  <!--instagram -->
+                        <li><a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a></li>  <!--youtube -->
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- final de la cabecera -->
+
+
+        <!-- inicio de la primera seccion -->
+        <!-- <div> -->
+            <section id="img">
+                <div class="imagen">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhicI1_inP5hpQFuWFIFFh0DGGI3D_yN6GYZCyag4abkkC8qcH1gUoSXn7ztISsDA4GW-rZSl79H3cAlJqzHpkzRFSVyUPWtgCUeznZnXZhYZuGMQlLHILCeVMukkuvNYjb98vBUexMBZWsRYooFmBAixGQx1mkJg1oUQSaQgGx4MMkygk5nQQ9Ngfi/s320/pikachu-008.png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="/images/imagen.png" class="d-block w-50" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhicI1_inP5hpQFuWFIFFh0DGGI3D_yN6GYZCyag4abkkC8qcH1gUoSXn7ztISsDA4GW-rZSl79H3cAlJqzHpkzRFSVyUPWtgCUeznZnXZhYZuGMQlLHILCeVMukkuvNYjb98vBUexMBZWsRYooFmBAixGQx1mkJg1oUQSaQgGx4MMkygk5nQQ9Ngfi/s320/pikachu-008.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </section>
+        <!-- </div> -->
+        <!-- final de la primera seccion -->
+
+        <!-- inicio de la segunda seccion -->
+        <div>
+            <section>
+                <div>
+                    <h2>Productos Destacados</h2>
+                    <div class="fila1">
+                        <ul class="productos">
+                            <li><span class="caja pro1"><ul>
+                                <li><img id="img2" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro2"><ul>
+                                <li><img id="img3" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro3"><ul>
+                                <li><img id="img4" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro4"><ul>
+                                <li><img id="img5" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro5"><ul>
+                                <li><img id="img6" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro6"><ul>
+                                <li><img id="img7" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro7"><ul>
+                                <li><img id="img8" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro8"><ul>
+                                <li><img id="img9" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro9"><ul>
+                                <li><img id="img10" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro10"><ul>
+                                <li><img id="img11" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro11"><ul>
+                                <li><img id="img12" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+
+                            <li><span class="caja pro12"><ul>
+                                <li><img id="img13" src="/images/imagen.png" alt="imagen del producto"></li>
+                                <li><h5>categoria</h5></li>
+                                <li><h5>nombre del producto</h5></li>
+                                <li><h5>precio</h5></li>
+                                <li><button>addCarrito</button></li>
+                            </ul></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- final de la segunda seccion -->
+
+            <!-- inicio de la tercera seccion -->
+            <section class="suscripcion">
+                <div >
+                    <div>
+                        <input class="correo ingresar" type="text" placeholder="ingrese su correo">
+                        <input class="correo boton" type="button" value="suscribete">
+                    </div>
+                </div>
+            </section>
+
+             <!-- final de la tercera seccion -->
+
+            <!-- inicio del pie de pagina -->
+            <footer>
+                <div class="pie">
+                    <div class="pie pie1">
+                        <ul>
+                            <div class="info">
+                            <li><label>Info de Contacto</label></li>
+                            <li><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore molestiae sed similique, officiis dolorem odit qui vitae doloribus magnam. </label></li>
+                            </div>
+                            <br>
+                            <div><li><img src="" alt="icono"><label>dirección: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
+                            <div><li><img src="" alt="icono"><label>telefono:  Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
+                            <div><li><img src="" alt="icono"><label>correo: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
+                            <div><li><img src="" alt="icono"><label>sitio web: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
+                        </ul>
+                    </div>
+
+                    <div class="pie pie2">
+                        <ul>
+                            <div class="info2">
+                                <li><label>Boletin</label></li>
+                                <li><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae nobis corporis omnis! Deleniti, itaque eaque. Mollitia aperiam minima earum? </label></li>
+                            </div>
+
+                            <div class="info3">
+                                <input type="text" placeholder="ingrese su correo">
+                                <input class="boton1" type="button" value="ir">
+                            </div>
+                            <br>
+                            <li><label>Contactanos</label></li>
+                            <br><br>
+
+                            <div class="iconosRedes">
+                                <div>
+                                    <li><img src="" alt="F"></li>    <!--icono facebook -->
+                                    <li><img src="" alt="T"></li>     <!--icono twitter -->
+                                    <li><img src="" alt="P"></li>   <!-- icono pinterest   -->
+                                    <li><img src="" alt="Y"></li>    <!--icono youtube -->                     <!--añadirle la etiqueta <a> para crear el enlace a cada red social-->
+                                    <li><img src="" alt="L"></li>    <!-- icono linkedin -->
+                                    <li><img src="" alt="I"></li>     <!--icono instagram -->
+                                    <li><img src="" alt="W"></li>   <!--  icono whatsa -->
+                                    <li><img src="" alt="E"></li>   <!-- icono etc... -->
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="pie pie3">
+                        <ul>
+                            <div>
+                                <li><label>Posteos Recientes</label></li>
+                            </div>
+                            <div class="post">
+                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptatum?</label></li>   
+                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</label></li>   
+                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vero!</label></li> 
+                            </div>  
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
