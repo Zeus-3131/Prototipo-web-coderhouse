@@ -17,6 +17,7 @@ header {
     background-color: aliceblue; 
     position: sticky;
     top: 0;  
+    z-index: 1;
 }
 
 .cabecera {
@@ -44,12 +45,12 @@ header {
     text-decoration: none;
 }
 
-.car{
+/* .car{
         box-shadow: 3px 4px 0px 0px #213b8a;
         background:linear-gradient(to bottom, #2035c4 5%, #4438f0 100%);
         background-color:#2035c4;
         border-radius:18px;
-        /* border:1px solid #3e0de0; */
+        border:1px solid #3e0de0; 
         display:inline-block;
         cursor:pointer;
         color:#ffffff;
@@ -67,7 +68,7 @@ header {
 .car:active {
     position:relative;
     top:1px;
-}
+} */
 
 .cabecera .redes ul {
     display: flex;
@@ -77,11 +78,31 @@ header {
 
 .cabecera .redes ul li {
     /* margin-right: 10px; */
-    margin: 3px;
+    margin: 8px;
 }
+
 
 .cabecera .redes a {
     text-decoration: none;
+    color: #7F7F7F;
+}
+
+/* color de iconos redes sociales */
+
+.fa:hover{
+    color: #019ad2;
+}
+
+.tw:hover{
+    color: #057fd0;
+}
+
+.ins:hover{
+    color:brown;
+}
+
+.tube:hover{
+    color: red;
 }
 
 .logo{
@@ -116,14 +137,19 @@ header {
 .imagen {
     margin: 0;
     height: 800px;
-    width: 1498px;
-    background-color: #5c5454;
+    /* width: 1498px; */
+    /* background-color: #5c5454; */
     /* display: flex;
     justify-content: center;  */
 }
 
 h2{
     text-align: center;
+}
+
+
+.carousel-inner{
+    height: 750px;
 }
 
 
