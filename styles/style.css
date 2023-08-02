@@ -31,6 +31,7 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    row-gap: 5px;
 }
 
 .cabecera .navegacion ul {
@@ -65,7 +66,7 @@ header {
 }
 
 .logo img{
-   width: 100%;
+   width: 6rem;
    margin-left: 30px;
 }
 
