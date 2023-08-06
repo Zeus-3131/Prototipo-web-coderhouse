@@ -17,7 +17,7 @@ body{
 }
 
 /* estilos de la cabecera */
-header {
+header, .navbar  {
     border-bottom: 1px black solid;
     background-image: url(	https://simple.oceanwp.org/wp-content/uploads/2017/02/diamond.png);
     background-repeat: repeat;
@@ -29,12 +29,16 @@ header {
   
   .cabecera {
     display: flex;
-    flex-wrap: wrap; /* Agregamos esta propiedad para que los elementos se envuelvan en pantallas pequeñas */
+    flex-wrap: wrap;  /*Agregamos esta propiedad para que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-evenly;
     align-items: center;
     row-gap: 5px;
   }
-  
+
+  .navbar-collapse{
+        flex-grow: 0;
+  }
+    
   .cabecera .navegacion ul {
     display: flex;
     list-style: none;
@@ -44,6 +48,13 @@ header {
   .cabecera .navegacion ul li {
     margin: 20px;
   }
+
+  @media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 0;
+    }
+}
 
   .navegacion nav{
     /* margin-right: 350px; */
@@ -87,7 +98,53 @@ header {
   .cabecera .redes ul li {
     margin: 8px;
   }
-  
+
+    /* este es el que controla cuando aparece el boton  */
+    @media (min-width: 545px){ 
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+    
+    }
+
+
+    /* este es el que controla cuando desaparece el nav  */
+    @media (min-width: 545px){ 
+    .navbar-expand-lg .navbar-collapse{
+            display: flex!important;
+            /* margin-right: 350px; */
+    }
+    }
+
+    @media (max-width: 540px){ 
+    .navbar-collapse {
+            margin-right: 350px;
+    }
+
+    .redes, .bloque3{
+        display: none;
+    }
+    }
+
+
+    /* este controla lo que esta dentro del boton de hamburguesa  */
+    @media (min-width: 545px){ 
+        .navbar-expand-lg .navbar-nav {
+        flex-direction: row !important;
+    }
+    } 
+
+
+/* @media (min-width: 992px){ 
+    .navbar-expand-lg .navbar-nav {
+    flex-direction:row;
+}
+} */
+
+/* .navbar-expand-lg .navbar-nav {
+    flex-direction:row; 
+} */
+
   .cabecera .redes a {
     text-decoration: none;
     color: #6B6B6B;
@@ -152,11 +209,6 @@ header {
     justify-content: center;  */
 }
 
-h2{
-    text-align: center;
-}
-
-
 .carousel-inner{
     height: 750px;
 }
@@ -170,8 +222,27 @@ h2{
 
 /* estilos de la segunda seccion */
 
+h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.linea{
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    /* border: black solid 1px; */
+}
+
+.contenedorLinea{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
 .fila1 {
-    margin: 105px;
+    margin: 50px 105px ;
     display: flex; 
     justify-content: space-around;
 }
@@ -211,7 +282,7 @@ h2{
     width: 100%;
 }
 
-h5{
+h6{
     margin: 15px;
 }
 
@@ -388,9 +459,9 @@ footer {
     margin: 20px auto;
 } */
 
-.post img {
+/* .post img {
     margin: 0px 15px;
-}
+} */
 
 /* Añadimos estilos para el footer en pantallas pequeñas */
 @media (max-width: 767px) {

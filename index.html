@@ -10,20 +10,65 @@
 </head>
 <body>
     <div id="contenedor">
-        <header class="d-flex flex-wrap justify-content-center py-3">
+        <!-- <header class="d-flex flex-wrap justify-content-center py-3">
             <div class="cabecera content">
-                <div class="cabecera logo"><a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="index.html"><img src="/images/logo.png" alt="Logo"/></a></div>
+                <div class="cabecera logo"><a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="index.html"><img src="images/logo.png" alt="Logo"/></a></div>
                 <div class="cabecera navegacion">
                 <nav >
                     <ul class="nav nav-pills">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="/pages/blog.html">Blog</a></li>
-                        <li><a href="/pages/coleccion.html">Colección</a></li>
-                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/coleccion.html">Colección</a></li>
+                        <li><a href="pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
                         <li><a href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a></li>
                     </ul>    
                 </nav>
+                </div>
+                <div class="cabecera redes">
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook fa-sm fa"></i></a></li> facebook
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter fa-sm tw" ></i></a></li> twitter
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram fa-sm ins"></i></a></li>  instagram
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-youtube fa-sm tube"></i></a></li>  youtube
+                    </ul>
+                </div>
+            </div>
+        </header>
+        final de la cabecera      este es la cabecera original la siguiente es la cabecera experimental con clases de bootrap  -->
+
+        <header class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-wrap justify-content-center py-3">
+            <div class="cabecera content">
+                <div class="cabecera logo"><a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="index.html"><img src="images/logo.png" alt="Logo"/></a></div>
+                <!-- Botón de hamburguesa con clase "navbar-toggler" y atributo data-bs-toggle="collapse" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Agregar la clase "collapse navbar-collapse" al contenedor del menú -->
+                <div class="cabecera navegacion collapse navbar-collapse" id="navbarSupportedContent">
+                    <nav>
+                        <!-- Agregar las clases "navbar-nav" y "me-auto" a la lista para alinear correctamente los elementos de navegación -->
+                        <ul class="navbar-nav me-auto nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Colección</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="cabecera redes">
                     <ul>
@@ -35,7 +80,7 @@
                 </div>
             </div>
         </header>
-        <!-- final de la cabecera -->
+ 
 
         <!-- inicio de la primera seccion -->
         <!-- <div> -->
@@ -76,7 +121,8 @@
         <div>
             <section>
                 <div>
-                    <h2>Productos Destacados</h2>
+                    <h3>Productos Destacados</h3>
+                    <div class="contenedorLinea"><hr class="linea"></div>
                     <div class="fila1">
                         <ul class="productos">
                             <li><span class="caja pro1"><ul>
@@ -279,15 +325,13 @@
                             </div>
                         </div>
             
-                        <div class="col-md-4 col-sm-12 pieBoletin">
-                            <ul>
+                        <div class="col-md-4 col-sm-12 pieBoletin bloque3">
+                            <ul class="info">
                                 <li><label>Posteos Recientes</label></li>
-                            </ul>
-                            <div class="post">
                                 <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptatum?</label></li>
                                 <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</label></li>
                                 <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vero!</label></li>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
