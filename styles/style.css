@@ -492,6 +492,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -499,11 +500,29 @@ footer {
     margin: 20px 0 0 0;
 }
 
+.selectColeccion{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 30px;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listadoNumero12:hover, .listadoNumero24:hover, .listado:hover{
+    color: orange;
+}
+
 
 .formCategorias ul{
     display: flex;
     flex-direction: row;
-    margin: 20px 0 0 0;
+    /* margin: 20px 0 0 0; */
     list-style: none;
 }
 
