@@ -61,25 +61,29 @@
         <!-- inicio de la primera seccion -->
         <div>
             <section>
-                <h2>Contactanos</h2>
+                <h2 class="h2Contacto">Contactanos</h2>
                 <br>
                 <div class="contenedorForm">
                     <form action="#">
                         <label><strong>Nombre</strong></label>
-                        <br><br>
-                        <input class="nombresyapellidos" type="text"> <input class="nombresyapellidos" type="text">
-                        <!-- <br> -->
-                        <div class="subt"><label class="subtext" for="">Nombres</label>  <label class="subtext textapellido" for="">Apellidos</label></div>
+                        <div class="row g-3">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Nombres" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Apellidos" aria-label="Last name">
+                            </div>
+                          </div>
                         <br>
-                        <label for=""><strong>Correo</strong></label>
-                        <br><br>
-                        <input class="correoText" type="text">
-                        <br><br>
+                        <label><strong>Correo</strong></label>
+                        <div class="col-12">
+                            <input type="text" class="form-control ingresarCorreo" id="inputAddress">
+                        </div>
+                        <br>
                         <label for=""><strong>Mensaje o Comentario</strong></label>
-                        <br><br>
-                        <textarea class="mensaje" name="" id="" cols="30" rows="10"></textarea>
-                        <br><br>
-                        <button class="botonForm">Enviar Mensaje</button>
+                        <div class="mb-3">
+                            <textarea class="form-control texTareaContacto" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
                         <br><br>
                     </form>
                 </div>

@@ -802,7 +802,42 @@ dl {
     width: 1200px;
 }
 
+.gridnosotros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+}
 
+.h2nosotros,.h2Contacto{
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nosotros {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contenidoNosotros,
+    .contenidoNosotros img {
+      width: 100%;
+      margin: 20px 0;
+    }
+  
+    .gridnosotros {
+      grid-template-columns: 1fr; /* Cambia a una sola columna en la cuadrícula */
+      margin-bottom: 20px;
+    }
+  
+    .contenidoHistoria {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  
+ 
 
 /* estilos de la pagina contactos html */
 
@@ -854,5 +889,31 @@ dl {
     width: 100%;
     height: 600px;
 }
+
+.ingresarCorreo{
+    width: 820px;
+}
+
+.texTareaContacto{
+    width: 820px;
+    height: 100px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedorForm form {
+      max-width: 100%; /* Ajusta el ancho del formulario */
+    }
+    
+    .nombresyapellidos,
+    .correoText,
+    .ingresarCorreo,
+    .texTareaContacto {
+      width: 100%; /* Ajusta el ancho de los inputs y textarea */
+      margin: 5px auto; /* Espaciado entre los elementos */
+    }
+  }
+  
+  
 
 
