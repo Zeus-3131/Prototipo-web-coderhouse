@@ -14,6 +14,8 @@ ol, ul {
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow-y: auto; /* estas lineas son para que se visualiice la barra de scroll */
+    max-height: 2rem;
 }
 
 /* estilos de la cabecera */
@@ -286,6 +288,25 @@ h6{
     margin: 15px;
 }
 
+.botonCompra{
+    /* font-family: arial; */
+    color: gray !important;
+    font-size: 14px;
+    text-shadow: 0px 0px 0px orange;
+    box-shadow: 0px 0px 0px orange;
+    padding: 5px 9px;
+    border-radius: 40px;
+    border: 3px double gray;
+    background: white;
+    border-color: gray;
+}
+
+.botonCompra:hover{
+    color: orange !important;
+    background: white;
+    border-color: orange;
+}
+
 
 
 
@@ -318,9 +339,28 @@ h6{
     width: 400px;
 }
 
+@media (max-width:530px){
+    .form-control{
+        width: 200px;
+      }
+      .botonSuscripcion{
+        width: 70px;
+        font-size: 10px;
+      }
+}
+
+@media (max-width:320px){
+    .form-control{
+        width: 100px;
+      }
+      .botonSuscripcion{
+        width: 50px;
+        font-size: 7px;
+      }
+}
+
 /* .suscripcion .correo{
-    margin: 20px;
-   
+    margin: 20px;  
 }
 
 .suscripcion .ingresar{
@@ -462,6 +502,35 @@ footer {
 /* .post img {
     margin: 0px 15px;
 } */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: .2fr .6fr;
+    grid-template-rows: .2fr .6fr ;
+}
+
+.grid-container i {
+    grid-row: span 2; /* Esto hará que el icono ocupe dos filas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: .2fr .9fr;
+    grid-template-rows: .4fr ;
+}
+
+.grid-container1 img {
+    width: 5rem;
+    margin-right: 10px;
+    grid-row: span 2; /* Esto hará que el icono ocupe dos filas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Añadimos estilos para el footer en pantallas pequeñas */
 @media (max-width: 767px) {
