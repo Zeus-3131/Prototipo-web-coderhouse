@@ -3,32 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../images/icono.ico" types="image/x-icon">
     <title>Prototipo web</title>
 </head>
 <body>
     <div id="contenedor">
-        <header>
+        <header class="navbar navbar-expand-lg navbar-light bg-light d-flex flex-wrap justify-content-center py-3">
             <div class="cabecera content">
-                <div class="cabecera logo"><img src="" alt="Logo"/></div>
-                <div class="cabecera navegacion">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="coleccion.html">Colección</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><button class="car">carrito</button></li>
-                    </ul>    
-                </nav>
+                <div class="cabecera logo"><a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="../index.html"><img src="../images/logo.png" alt="Logo"/></a></div>
+                <!-- Botón de hamburguesa con clase "navbar-toggler" y atributo data-bs-toggle="collapse" -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Agregar la clase "collapse navbar-collapse" al contenedor del menú -->
+                <div class="cabecera navegacion collapse navbar-collapse" id="navbarSupportedContent">
+                    <nav>
+                        <!-- Agregar las clases "navbar-nav" y "me-auto" a la lista para alinear correctamente los elementos de navegación -->
+                        <ul class="navbar-nav me-auto nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="coleccion.html">Colección</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="cabecera redes">
                     <ul>
-                        <li><a href="#"><img src="" alt="F"></a></li> <!--facebook -->
-                        <li><a href="#"><img src="" alt="T"></a></li> <!-- twitter -->
-                        <li><a href="#"><img src="" alt="I"></a></li>  <!--instagram -->
-                        <li><a href="#"><img src="" alt="Y"></a></li>  <!--youtube -->
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-facebook fa-sm fa"></i></a></li> <!--facebook -->
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-twitter fa-sm tw" ></i></a></li> <!-- twitter -->
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-instagram fa-sm ins"></i></a></li>  <!--instagram -->
+                        <li><a href="#" target="_blank"><i class="fa-brands fa-youtube fa-sm tube"></i></a></li>  <!--youtube -->
                     </ul>
                 </div>
             </div>
@@ -74,10 +95,15 @@
             <!-- inicio de la segunda seccion -->
             <section class="suscripcion">
                 <div >
-                    <div>
-                        <input class="correo ingresar" type="text" placeholder="ingrese su correo">
-                        <input class="correo boton" type="button" value="suscribete">
-                    </div>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                          <label for="inputPassword2" class="visually-hidden">correo</label>
+                          <input type="text" class="form-control" id="inputPassword2" placeholder="Ingrese su correo">
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-primary mb-3 botonSuscripcion">Suscribete</button>
+                        </div>
+                      </form>
                 </div>
             </section>
 
@@ -85,63 +111,62 @@
 
             <!-- inicio del pie de pagina -->
             <footer>
-                <div class="pie">
-                    <div class="pie pie1">
-                        <ul>
-                            <div class="info">
-                            <li><label>Info de Contacto</label></li>
-                            <li><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore molestiae sed similique, officiis dolorem odit qui vitae doloribus magnam. </label></li>
-                            </div>
-                            <br>
-                            <div><li><img src="" alt="icono"><label>dirección: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
-                            <div><li><img src="" alt="icono"><label>telefono:  Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
-                            <div><li><img src="" alt="icono"><label>correo: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
-                            <div><li><img src="" alt="icono"><label>sitio web: Lorem ipsum dolor sit amet.</label></li>   <!--organizarlo --></div>
-                        </ul>
-                    </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="pie col-md-4 col-sm-12">
+                            <ul class="info">
+                                <li><label>Info de Contacto</label></li>
+                                <li><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum labore molestiae sed similique, officiis dolorem odit qui vitae doloribus magnam. </label></li>
+                                <li class="grid-container"><i class="fa-solid fa-location-dot fa-lg grid-item"></i><span class="grid-item"><label><b>Dirección:</b></label></span><span class="grid-item"><label>Lorem ipsum dolor sit amet.</label></span></li>
 
-                    <div class="pie pie2">
-                        <ul>
-                            <div class="info2">
+                                <li class="grid-container"><i class="fa-solid fa-phone fa-lg grid-item"></i><span class="grid-item"><label><b>Telefono:</b></label></span><span class="grid-item"><label> Lorem ipsum dolor sit amet.</label></span></li>
+
+                                <li class="grid-container"><i class="fa-solid fa-envelope fa-lg grid-item"></i><span class="grid-item"><label><b>Correo:</b></label></span><span class="grid-item"><label>Lorem ipsum dolor sit amet.</label></span></li>
+
+                                <li class="grid-container"><i class="fa-solid fa-link fa-lg grid-item"></i><span class="grid-item"><label><b>Sitio Web:</b></label></span><span class="grid-item"><label>Lorem ipsum dolor sit amet.</label></span></li>
+                            </ul>
+                        </div>
+            
+                        <div class="col-md-4 col-sm-12  pieBoletin">
+                            <ul class="info">
                                 <li><label>Boletin</label></li>
                                 <li><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae nobis corporis omnis! Deleniti, itaque eaque. Mollitia aperiam minima earum? </label></li>
-                            </div>
-
+                            </ul>
                             <div class="info3">
-                                <input type="text" placeholder="ingrese su correo">
-                                <input class="boton1" type="button" value="ir">
+                                <!-- <input type="text" placeholder="ingrese su correo">
+                                <input class="boton1" type="button" value="ir"> -->
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="ingrese su correo" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Ir</button>
+                                  </div>
                             </div>
                             <br>
                             <li><label>Contactanos</label></li>
                             <br><br>
-
-                            <div class="iconosRedes">
-                                <div>
-                                    <li><img src="" alt="F"></li>    <!--icono facebook -->
-                                    <li><img src="" alt="T"></li>     <!--icono twitter -->
-                                    <li><img src="" alt="P"></li>   <!-- icono pinterest   -->
-                                    <li><img src="" alt="Y"></li>    <!--icono youtube -->                     <!--añadirle la etiqueta <a> para crear el enlace a cada red social-->
-                                    <li><img src="" alt="L"></li>    <!-- icono linkedin -->
-                                    <li><img src="" alt="I"></li>     <!--icono instagram -->
-                                    <li><img src="" alt="W"></li>   <!--  icono whatsa -->
-                                    <li><img src="" alt="E"></li>   <!-- icono etc... -->
+                            <div class=" pie iconosRedes">
+                                <div class="iconosPie">
+                                    <li><a><i class="fa-brands fa-twitter fa-xl tw" ></i></a></li>
+                                    <li><a><i class="fa-brands fa-facebook fa-xl fa"></i></a></li>
+                                    <li><a><i class="fa-brands fa-instagram fa-xl ins"></i></a></li>
+                                    <li><a><i class="fa-brands fa-linkedin fa-xl kedin"></i></a></li>
+                                    <li><a><i class="fa-brands fa-pinterest-p fa-xl rest"></i></a></li>
+                                    <li><a><i class="fa-solid fa-basketball fa-xl basket"></i></a></li>
+                                    <li><a><i class="fa-brands fa-whatsapp fa-xl sapp"></i></a></li>
+                                    <li><a><i class="fa-brands fa-youtube fa-xl tube"></i></a></li>
                                 </div>
                             </div>
-                        </ul>
-                    </div>
-
-                    
-                    <div class="pie pie3">
-                        <ul>
-                            <div>
+                        </div>
+            
+                        <div class="col-md-4 col-sm-12 pieBoletin bloque3">
+                            <ul class="info">
                                 <li><label>Posteos Recientes</label></li>
-                            </div>
-                            <div class="post">
-                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptatum?</label></li>   
-                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</label></li>   
-                                <li><img src="" alt="imagen del post"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vero!</label></li> 
-                            </div>  
-                        </ul>
+                                <li class="grid-container1"><img src="../images/imagen.png" alt="imagen del post" class="grid-item"><span class="grid-item"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptatum?</label></span></li>
+
+                                <li class="grid-container1"><img src="../images/imagen.png" alt="imagen del post" class="grid-item"><span class="grid-item"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, nesciunt.</label></span></li>
+
+                                <li class="grid-container1"><img src="../images/imagen.png" alt="imagen del post" class="grid-item"><span class="grid-item"><label>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, vero!</label></span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </footer>
