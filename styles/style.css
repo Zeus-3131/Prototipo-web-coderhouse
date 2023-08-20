@@ -46,7 +46,6 @@ header .cabecera .navegacion ul li {
   margin: 20px;
 }
 header .navegacion nav {
-  /* margin-right: 350px; */
   position: relative;
   right: 100px;
 }
@@ -106,6 +105,12 @@ header .content {
   margin: 0 auto;
   padding-top: 10px;
 }
+@media (max-width: 1170px) {
+  header .navegacion nav {
+    position: relative;
+    right: 0;
+  }
+}
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -123,7 +128,6 @@ header .content {
 @media (min-width: 545px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
-    /* margin-right: 350px; */
   }
 }
 @media (max-width: 540px) {
@@ -138,14 +142,6 @@ header .content {
 @media (min-width: 545px) {
   .navbar-expand-lg .navbar-nav {
     flex-direction: row !important;
-  }
-}
-/* color de iconos redes sociales */
-@media (max-width: 1170px) {
-  .navegacion nav {
-    /* margin-right: 350px; */
-    position: relative;
-    right: 0;
   }
 }
 /* estilos de la tercera seccion*/
@@ -417,7 +413,7 @@ section .formCategorias {
   width: 1000px;
   height: 70px;
   max-width: 90%;
-  margin: 90px auto 0 auto;
+  margin: 50px auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -436,16 +432,13 @@ section ol {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-ul, dl {
+section ul, section dl {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-section .listadoNumero12:hover, .listadoNumero24:hover, .listado:hover {
+section .listadoNumero12:hover, section .listadoNumero24:hover, section .listado:hover {
   color: orange;
 }
-
 section .formCategorias {
   border-top: 1px black solid;
   border-bottom: 1px black solid;
@@ -453,11 +446,21 @@ section .formCategorias {
 section .formCategorias ul {
   display: flex;
   flex-direction: row;
-  /* margin: 20px 0 0 0; */
   list-style: none;
 }
 section .formCategorias li {
   margin: 5px;
+}
+@media (max-width: 580px) {
+  section .formCategorias ul {
+    display: none;
+  }
+}
+@media (min-width: 330px) and (max-width: 580px) {
+  section .selectColeccion {
+    width: 500px;
+    height: 30px;
+  }
 }
 
 /* estilos de la pagina blog html */
@@ -642,6 +645,9 @@ section .h2Contacto {
 }
 /* estilos de la pagina contactos html */
 /* estilos de la primera seccion */
+section {
+  /* Para pantallas pequeñas */
+}
 section .contenedorForm {
   display: flex;
   flex-direction: column;
@@ -704,8 +710,35 @@ section .botonContacto:hover {
   color: #FEFFFC !important;
   background: #172F45;
 }
+@media (min-width: 780px) and (max-width: 990px) {
+  section .form-control {
+    width: 300px;
+  }
+  section .ingresarCorreo {
+    width: 620px;
+  }
+}
+@media (max-width: 768px) {
+  section .form-control {
+    width: 200px;
+  }
+}
+@media (min-width: 260px) and (max-width: 460px) {
+  section .form-control {
+    width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  section .contenedorForm form {
+    max-width: 100%;
+  }
+  section .nombresyapellidos, section .correoText, section .ingresarCorreo, section .texTareaContacto {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
 
-section .ingresarCorreo, .Nombre {
+.ingresarCorreo, .Nombre {
   background-color: transparent;
   border: 0 !important;
   border-bottom: 2px black solid !important;
@@ -720,35 +753,6 @@ section .ingresarCorreo, .Nombre {
 
 .texTareaContacto {
   box-shadow: none !important;
-}
-
-@media (max-width: 768px) {
-  .form-control {
-    width: 200px;
-  }
-}
-@media (min-width: 780px) and (max-width: 990px) {
-  .form-control {
-    width: 300px;
-  }
-  .ingresarCorreo {
-    width: 620px;
-  }
-}
-@media (min-width: 260px) and (max-width: 460px) {
-  .form-control {
-    width: 100px;
-  }
-}
-/* Para pantallas pequeñas */
-@media (max-width: 768px) {
-  .contenedorForm form {
-    max-width: 100%;
-  }
-  .nombresyapellidos, .correoText, .ingresarCorreo, .texTareaContacto {
-    width: 100%;
-    margin: 5px auto;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

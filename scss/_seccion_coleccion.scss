@@ -7,7 +7,7 @@ section {
       width: 1000px;
       height: 70px;
       max-width: 90%;
-      margin: 90px auto 0 auto;
+      margin: 50px auto 0 auto;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -29,31 +29,42 @@ section {
       margin-top: 0;
       margin-bottom: 0;
     }
-  }
-  
-  ul, dl {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  section .listadoNumero12:hover, .listadoNumero24:hover, .listado:hover {
-    color: orange;
-  }
-  
-  section .formCategorias {
-    ul {
-      display: flex;
-      flex-direction: row;
-  
-      /* margin: 20px 0 0 0; */
-      list-style: none;
+
+    ul, dl {
+      margin-top: 0;
+      margin-bottom: 0;
     }
-  
-    li {
-      margin: 5px;
+    
+    .listadoNumero12:hover, .listadoNumero24:hover, .listado:hover {
+      color: orange;
     }
-  
-    border-top: 1px black solid;
-    border-bottom: 1px black solid;
+    
+    .formCategorias {
+      ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+      }
+    
+      li {
+        margin: 5px;
+      }
+    
+      border-top: 1px black solid;
+      border-bottom: 1px black solid;
+    }
+
+    @media (max-width: 580px) {
+      .formCategorias ul {
+        display: none;
+      }
+    }
+
+    @media (min-width: 330px) and (max-width: 580px) {
+      .selectColeccion {
+        width: 500px;
+        height: 30px;
+      }
+    }
   }
   

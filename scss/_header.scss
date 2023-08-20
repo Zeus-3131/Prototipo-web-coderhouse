@@ -38,7 +38,6 @@ header, .navbar {
     }
   
     .navegacion nav {
-      /* margin-right: 350px; */
       position: relative;
       right: 100px;
     }
@@ -116,6 +115,13 @@ header, .navbar {
       margin: 0 auto;
       padding-top: 10px;
     }
+
+    @media (max-width: 1170px) {
+      .navegacion nav {
+        position: relative;
+        right: 0;
+      }
+    }
   }
   
   @media (min-width: 992px) {
@@ -136,8 +142,6 @@ header, .navbar {
   @media (min-width: 545px) {
     .navbar-expand-lg .navbar-collapse {
       display: flex !important;
-  
-      /* margin-right: 350px; */
     }
   }
   
@@ -158,13 +162,6 @@ header, .navbar {
     }
   }
   
-  /* color de iconos redes sociales */
   
-  @media (max-width: 1170px) {
-    .navegacion nav {
-      /* margin-right: 350px; */
-      position: relative;
-      right: 0;
-    }
-  }
+ 
   

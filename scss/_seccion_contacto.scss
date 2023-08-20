@@ -76,10 +76,45 @@
         color: #FEFFFC !important;
         background: #172F45;
       }
+
+      @media (min-width: 780px) and (max-width: 990px) {
+        .form-control {
+          width: 300px;
+        }
+      
+        .ingresarCorreo {
+          width: 620px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .form-control {
+          width: 200px;
+        }
+      }
+      
+     
+      
+      @media (min-width: 260px) and (max-width: 460px) {
+        .form-control {
+          width: 100px;
+        }
+      }
+      
+      /* Para pantallas pequeñas */
+      @media (max-width: 768px) {
+        .contenedorForm form {
+          max-width: 100%;
+        }
+      
+        .nombresyapellidos, .correoText, .ingresarCorreo, .texTareaContacto {
+          width: 100%;
+          margin: 5px auto;
+        }
+      }
   }
   
- 
-  section .ingresarCorreo, .Nombre {
+  .ingresarCorreo, .Nombre {
     background-color: transparent;
     border: 0 !important;
     border-bottom: 2px black solid !important;
@@ -96,37 +131,5 @@
     box-shadow: none !important;
   }
   
-  @media (max-width: 768px) {
-    .form-control {
-      width: 200px;
-    }
-  }
-  
-  @media (min-width: 780px) and (max-width: 990px) {
-    .form-control {
-      width: 300px;
-    }
-  
-    .ingresarCorreo {
-      width: 620px;
-    }
-  }
-  
-  @media (min-width: 260px) and (max-width: 460px) {
-    .form-control {
-      width: 100px;
-    }
-  }
-  
-  /* Para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .contenedorForm form {
-      max-width: 100%;
-    }
-  
-    .nombresyapellidos, .correoText, .ingresarCorreo, .texTareaContacto {
-      width: 100%;
-      margin: 5px auto;
-    }
-  }
+ 
   
