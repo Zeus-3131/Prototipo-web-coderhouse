@@ -1,3 +1,152 @@
+@charset "UTF-8";
+* {
+  border: 0;
+  padding: 0;
+}
 
+/* reset en uno de los parametros internos de bootstrab 5 */
+ol, ul {
+  padding-left: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* estilos de la cabecera */
+header, .navbar {
+  border-bottom: 1px black solid;
+  background-image: url(https://simple.oceanwp.org/wp-content/uploads/2017/02/diamond.png);
+  background-repeat: repeat;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding-bottom: 10px;
+}
+
+header .cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  /*Agregamos esta propiedad para que los elementos se envuelvan en pantallas pequeñas */
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 5px;
+}
+header .navbar-collapse {
+  flex-grow: 0;
+}
+header .cabecera .navegacion ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  /* Agregamos esto para quitar el espacio a la izquierda en los enlaces de navegación */
+}
+header .cabecera .navegacion ul li {
+  margin: 20px;
+}
+header .navegacion nav {
+  /* margin-right: 350px; */
+  position: relative;
+  right: 100px;
+}
+header .cabecera .navegacion a {
+  text-decoration: none;
+  color: black;
+}
+header .cabecera .navegacion a:hover {
+  text-decoration: none;
+  color: orange;
+}
+header .logo {
+  width: 100px;
+  /* margin-left: 60px; */
+}
+header .logo img {
+  width: 6rem;
+  margin-left: 30px;
+}
+header .logo img:hover {
+  opacity: 0.5;
+}
+header .cabecera .redes {
+  padding-top: 10px;
+}
+header .cabecera .redes ul {
+  display: flex;
+  list-style: none;
+}
+header .cabecera .redes ul li {
+  margin: 8px;
+}
+header .cabecera .redes a {
+  text-decoration: none;
+  color: #6B6B6B;
+}
+header .fa:hover {
+  color: #019ad2;
+}
+header .tw:hover {
+  color: #057fd0;
+}
+header .ins:hover {
+  color: brown;
+}
+header .tube:hover {
+  color: red;
+}
+header .logo {
+  cursor: pointer;
+}
+header .content {
+  width: 100%;
+  /* Hacemos que el ancho sea del 100% para que los elementos se ajusten en pantallas pequeñas */
+  max-width: 1200px;
+  /* Agregamos un ancho máximo para que no se estire demasiado en pantallas grandes */
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+/* este es el que controla cuando aparece el boton  */
+@media (min-width: 545px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none !important;
+  }
+}
+/* este es el que controla cuando desaparece el nav  */
+@media (min-width: 545px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    /* margin-right: 350px; */
+  }
+}
+@media (max-width: 540px) {
+  .navbar-collapse {
+    margin-right: 350px;
+  }
+  header .redes, .bloque3 {
+    display: none;
+  }
+}
+/* este controla lo que esta dentro del boton de hamburguesa  */
+@media (min-width: 545px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row !important;
+  }
+}
+/* color de iconos redes sociales */
+@media (max-width: 1170px) {
+  .navegacion nav {
+    /* margin-right: 350px; */
+    position: relative;
+    right: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

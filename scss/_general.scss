@@ -1,0 +1,16 @@
+// parametros o reseteos necesarios para la pagina
+
+*{
+    border: 0;
+    padding: 0;
+}
+
+/* reset en uno de los parametros internos de bootstrab 5 */
+ol, ul {
+    padding-left: 0 ; 
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
