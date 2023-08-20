@@ -1,0 +1,97 @@
+/* estilos de la segunda seccion */
+
+section {
+    h3 {
+      text-align: center;
+      font-family: Old Standard TT;
+      font-size: 30px;
+    }
+  
+    .linea {
+      width: 100px;
+      height: 2px;
+      background-color: black;
+  
+      /* border: black solid 1px; */
+    }
+  
+    .contenedorLinea {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .fila1 {
+      margin: 50px 105px;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .caja {
+      display: flex;
+      flex-direction: column;
+      width: 360px;
+
+  
+      img {
+        width: 300px;
+        height: 500px;
+      }
+    }
+  
+    .productos {
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      /*Agregado */
+      flex-wrap: wrap;
+      text-align: center;
+  
+      li {
+        flex: 1;
+  
+        /* Agregado */
+        list-style: none;
+        margin: 4px;
+      }
+  
+      span {
+        margin-bottom: 40px;
+      }
+    }
+  
+    #img2 {
+      width: 100%;
+    }
+  }
+  
+  #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13 {
+    width: 100%;
+  }
+  
+  section {
+    h6 {
+      margin: 15px;
+    }
+  
+    .botonCompra {
+      color: gray !important;
+      font-size: 14px;
+      text-shadow: 0px 0px 0px orange;
+      box-shadow: 0px 0px 0px orange;
+      padding: 5px 9px;
+      border-radius: 40px;
+      border: 3px double gray;
+      background: white;
+      border-color: gray;
+  
+      &:hover {
+        color: orange !important;
+        background: white;
+        border-color: orange;
+      }
+    }
+  }
+  

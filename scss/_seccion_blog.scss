@@ -1,0 +1,117 @@
+/* estilos de la pagina blog html */
+
+/* estilos de la primera seccion */
+
+.seccionBlog{
+    width: 950px;
+    background-color: white ;
+    margin-top: 50px;
+}
+
+.seccionBlog div{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccionBlog div ul{
+    list-style: none; 
+    font-size: 1rem;
+}
+
+.tituloPost{
+    font-size: 1.2rem;
+}
+
+.seccionBlog div ul li{
+    margin: 15px auto;
+}
+
+.contImagen div img{
+    height: 500px;
+    width: 950px;
+    margin: 0;
+}
+
+.imgPost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.botonBlog {
+    font-family: georgia;
+    color: #A0A19F !important;
+    font-size: 12px;
+    text-shadow: 0px 0px 0px #FFFEFA;
+    box-shadow: 0px 0px 0px #FFFFFC;
+    padding: 8px 18px;
+    border-radius: 0px;
+    border: 2px solid gray;
+    background: #FFFFFA;
+  }
+  .botonBlog:hover {
+    color: #FCAC21 !important;
+    background: #F7FDFF;
+    border: 2px solid orange;
+  }
+
+  .pagination{
+    margin-right: 150px;
+  }
+  
+  .pagination a.page-link {
+    color: gray;
+    border: gray;
+    box-shadow: none;
+  }
+  
+  /* Cambiar el color de los enlaces de página al pasar el cursor sobre ellos */
+  .pagination a.page-link:hover {
+    color: orange;
+  }
+
+.gridblog{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom:50px;
+}
+
+.grid-itemb {
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+    justify-self: center; /* Centra horizontalmente dentro de la columna */
+  }
+
+.gridblog seccionBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .seccionBlog {
+      width: 100%;
+      padding: 0 10px 20px 10px;
+    }
+  
+    .contImagen div img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .gridblog {
+      grid-template-columns: 1fr; /* Cambia a una sola columna */
+    }
+  
+    .grid-itemb {
+      justify-self: stretch; /* Amplía para ocupar el ancho completo */
+    }
+  
+    .pagination {
+      margin-right: 0;
+      text-align: center;
+    }
+  }

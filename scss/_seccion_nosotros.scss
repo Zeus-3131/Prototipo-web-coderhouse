@@ -1,0 +1,88 @@
+/* estilos de la pagina nosotros html */
+
+/* estilos de la primera seccion */
+
+section {
+    .nosotros {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    .contenidoNosotros {
+      width: 600px;
+      margin: auto 20px;
+  
+      img {
+        width: 600px;
+      }
+    }
+  
+    .nosotros2 {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+  
+    .historia {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contenidoHistoria {
+      width: 1200px;
+    }
+  
+    .gridnosotros {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 100px;
+    }
+  
+    .h2nosotros {
+      text-align: center;
+      margin: 40px auto;
+      font-family: Old Standard TT;
+      font-size: 30px;
+    }
+
+    .h2Contacto {
+        text-align: center;
+        margin: 40px auto;
+        font-family: Old Standard TT;
+        font-size: 30px;
+      }
+  }
+  
+  
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nosotros {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contenidoNosotros {
+      width: 100%;
+      margin: 20px 0;
+  
+      img {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+  
+    .gridnosotros {
+      grid-template-columns: 1fr;
+      margin-bottom: 20px;
+    }
+  
+    .contenidoHistoria {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  

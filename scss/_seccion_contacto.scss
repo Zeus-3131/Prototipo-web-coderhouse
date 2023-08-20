@@ -1,0 +1,132 @@
+/* estilos de la pagina contactos html */
+
+/* estilos de la primera seccion */
+
+  section {
+    .contenedorForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+      
+        .form input {
+          margin: 2px auto;
+          border-radius: 1px black solid;
+          border: 1px black solid;
+        }
+      }
+      
+      .textarea {
+        margin: 2px auto;
+        border-radius: 1px black solid;
+        border: 1px black solid;
+      }
+
+    .nombresyapellidos {
+      height: 20px;
+      width: 300px;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .correoText {
+      height: 20px;
+      width: 610px;
+    }
+  
+    .subt {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .textapellido {
+      margin: 0 240px 0 0;
+    }
+  
+    .mensaje {
+      width: 610px;
+    }
+  
+    .ingresarCorreo {
+      width: 820px;
+    }
+  
+    .texTareaContacto {
+      width: 820px;
+      height: 100px;
+    }
+  
+    .botonContacto {
+      font-family: georgia;
+      font-weight: bold;
+      color: #FFFFF5 !important;
+      font-size: 14px;
+      text-shadow: 0px 0px 0px #F5FEFF;
+      box-shadow: 0px 0px 0px #FFFFFA;
+      padding: 13px 20px;
+      border-radius: 40px;
+      border: 0px solid #3866A3;
+      background: #FFAF47;
+      margin-top: 15px;
+    }
+
+    .botonContacto:hover {
+        color: #FEFFFC !important;
+        background: #172F45;
+      }
+  }
+  
+ 
+  section .ingresarCorreo, .Nombre {
+    background-color: transparent;
+    border: 0 !important;
+    border-bottom: 2px black solid !important;
+    border-radius: 0;
+    box-shadow: none !important;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 600px;
+  }
+
+.texTareaContacto {
+    box-shadow: none !important;
+  }
+  
+  @media (max-width: 768px) {
+    .form-control {
+      width: 200px;
+    }
+  }
+  
+  @media (min-width: 780px) and (max-width: 990px) {
+    .form-control {
+      width: 300px;
+    }
+  
+    .ingresarCorreo {
+      width: 620px;
+    }
+  }
+  
+  @media (min-width: 260px) and (max-width: 460px) {
+    .form-control {
+      width: 100px;
+    }
+  }
+  
+  /* Para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .contenedorForm form {
+      max-width: 100%;
+    }
+  
+    .nombresyapellidos, .correoText, .ingresarCorreo, .texTareaContacto {
+      width: 100%;
+      margin: 5px auto;
+    }
+  }
+  

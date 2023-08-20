@@ -1,0 +1,156 @@
+/* Estilos del pie de pagina o footer */
+
+footer {
+    background-color: #383838;
+    padding: 20px 0;
+    color: white;
+  
+    .pie {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      li {
+        list-style: none;
+      }
+    }
+  }
+  
+  .pieBoletin li {
+    list-style: none;
+  }
+  
+  footer {
+    .pie i {
+      margin-right: 20px;
+    }
+  
+    .info {
+      padding: 0;
+      margin: 0;
+  
+      li {
+        margin: 15px 0;
+      }
+    }
+  
+    .pie1 {
+      div {
+        li img label {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+  
+        margin: 20px auto;
+      }
+  
+      label {
+        margin: 20px;
+      }
+    }
+  }
+  
+  .info3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    align-content: center;
+  }
+  
+
+  footer {
+    .iconosPie {
+      display: grid;
+      grid-template-rows: .5fr .5fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+      li i {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  
+    .iconosRedes li {
+      margin: 15px;
+    }
+  
+    .kedin:hover {
+      color: #019ad2;
+    }
+  
+    .rest:hover {
+      color: #eb1414;
+    }
+  
+    .basket:hover {
+      color: orange;
+    }
+  
+    .sapp:hover {
+      color: rgb(26, 241, 26);
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: .2fr .6fr;
+      grid-template-rows: 0.2fr 0.6fr;
+  
+      i {
+        grid-row: span 2;
+  
+        /* Esto hará que el icono ocupe dos filas */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: .2fr .9fr;
+      grid-template-rows: 0.4fr;
+  
+      img {
+        width: 5rem;
+        margin-right: 10px;
+        grid-row: span 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 11px;
+      }
+    }
+  }
+  
+  /* Añadimos estilos para el footer en pantallas pequeñas */
+  @media (max-width: 767px) {
+    .pie {
+      flex-direction: column;
+    }
+  
+    .info, .info2, .info3, .post {
+      text-align: start;
+    }
+  }
+  
+  @media (min-width: 230px) and (max-width: 769px) {
+    .iconosPie {
+      width: 400px;
+    }
+  
+    .iconosRedes div {
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  
+      display: grid;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+  
+  

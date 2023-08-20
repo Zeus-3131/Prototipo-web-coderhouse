@@ -148,5 +148,607 @@ header .content {
     right: 0;
   }
 }
+/* primera seccion */
+section #img1 {
+  height: 800px;
+  width: 1330px;
+}
+section #img {
+  margin: 0;
+}
+section .imagen {
+  margin: 0;
+  height: 800px;
+}
+section .carousel-inner {
+  height: 750px;
+}
+section .foto1 {
+  height: 750px;
+  width: 100%;
+}
+
+/* estilos de la segunda seccion */
+section h3 {
+  text-align: center;
+  font-family: Old Standard TT;
+  font-size: 30px;
+}
+section .linea {
+  width: 100px;
+  height: 2px;
+  background-color: black;
+  /* border: black solid 1px; */
+}
+section .contenedorLinea {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+section .fila1 {
+  margin: 50px 105px;
+  display: flex;
+  justify-content: space-around;
+}
+section .caja {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
+section .caja img {
+  width: 300px;
+  height: 500px;
+}
+section .productos {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  /*Agregado */
+  flex-wrap: wrap;
+  text-align: center;
+}
+section .productos li {
+  flex: 1;
+  /* Agregado */
+  list-style: none;
+  margin: 4px;
+}
+section .productos span {
+  margin-bottom: 40px;
+}
+section #img2 {
+  width: 100%;
+}
+
+#img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13 {
+  width: 100%;
+}
+
+section h6 {
+  margin: 15px;
+}
+section .botonCompra {
+  color: gray !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px orange;
+  box-shadow: 0px 0px 0px orange;
+  padding: 5px 9px;
+  border-radius: 40px;
+  border: 3px double gray;
+  background: white;
+  border-color: gray;
+}
+section .botonCompra:hover {
+  color: orange !important;
+  background: white;
+  border-color: orange;
+}
+
+/* estilos de la tercera seccion*/
+.suscripcion div {
+  height: 350px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px black solid;
+  border-top: 1px black solid;
+  background-color: #F9F9F9;
+}
+
+.mb-3 {
+  margin-bottom: 0 !important;
+}
+
+.g-3, .gy-3 {
+  --bs-gutter-y: 0;
+}
+
+.form-control {
+  width: 400px;
+}
+
+@media (max-width: 530px) {
+  .form-control {
+    width: 200px;
+  }
+  .botonSuscripcion {
+    width: 70px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .form-control {
+    width: 100px;
+  }
+  .botonSuscripcion {
+    width: 50px;
+    font-size: 7px;
+  }
+}
+/* Estilos del pie de pagina o footer */
+footer {
+  background-color: #383838;
+  padding: 20px 0;
+  color: white;
+}
+footer .pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .pie li {
+  list-style: none;
+}
+
+.pieBoletin li {
+  list-style: none;
+}
+
+footer .pie i {
+  margin-right: 20px;
+}
+footer .info {
+  padding: 0;
+  margin: 0;
+}
+footer .info li {
+  margin: 15px 0;
+}
+footer .pie1 div {
+  margin: 20px auto;
+}
+footer .pie1 div li img label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer .pie1 label {
+  margin: 20px;
+}
+
+.info3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px auto;
+  align-content: center;
+}
+
+footer .iconosPie {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer .iconosPie li i {
+  margin: 0;
+  padding: 0;
+}
+footer .iconosRedes li {
+  margin: 15px;
+}
+footer .kedin:hover {
+  color: #019ad2;
+}
+footer .rest:hover {
+  color: #eb1414;
+}
+footer .basket:hover {
+  color: orange;
+}
+footer .sapp:hover {
+  color: rgb(26, 241, 26);
+}
+footer .grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 0.6fr;
+  grid-template-rows: 0.2fr 0.6fr;
+}
+footer .grid-container i {
+  grid-row: span 2;
+  /* Esto hará que el icono ocupe dos filas */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .grid-container1 {
+  display: grid;
+  grid-template-columns: 0.2fr 0.9fr;
+  grid-template-rows: 0.4fr;
+}
+footer .grid-container1 img {
+  width: 5rem;
+  margin-right: 10px;
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 11px;
+}
+
+/* Añadimos estilos para el footer en pantallas pequeñas */
+@media (max-width: 767px) {
+  .pie {
+    flex-direction: column;
+  }
+  .info, .info2, .info3, .post {
+    text-align: start;
+  }
+}
+@media (min-width: 230px) and (max-width: 769px) {
+  .iconosPie {
+    width: 400px;
+  }
+  .iconosRedes div {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+  }
+  .iconosRedes div li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* estilos de la pagina coleccion html */
+/* estilos de la primera seccion */
+section .formCategorias {
+  width: 1000px;
+  height: 70px;
+  max-width: 90%;
+  margin: 90px auto 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section .formCategorias form {
+  margin: 20px 0 0 0;
+}
+section .selectColeccion {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 30px;
+}
+section ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section .listadoNumero12:hover, .listadoNumero24:hover, .listado:hover {
+  color: orange;
+}
+
+section .formCategorias {
+  border-top: 1px black solid;
+  border-bottom: 1px black solid;
+}
+section .formCategorias ul {
+  display: flex;
+  flex-direction: row;
+  /* margin: 20px 0 0 0; */
+  list-style: none;
+}
+section .formCategorias li {
+  margin: 5px;
+}
+
+/* estilos de la pagina blog html */
+/* estilos de la primera seccion */
+.seccionBlog {
+  width: 950px;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.seccionBlog div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.seccionBlog div ul {
+  list-style: none;
+  font-size: 1rem;
+}
+
+.tituloPost {
+  font-size: 1.2rem;
+}
+
+.seccionBlog div ul li {
+  margin: 15px auto;
+}
+
+.contImagen div img {
+  height: 500px;
+  width: 950px;
+  margin: 0;
+}
+
+.imgPost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botonBlog {
+  font-family: georgia;
+  color: #A0A19F !important;
+  font-size: 12px;
+  text-shadow: 0px 0px 0px #FFFEFA;
+  box-shadow: 0px 0px 0px #FFFFFC;
+  padding: 8px 18px;
+  border-radius: 0px;
+  border: 2px solid gray;
+  background: #FFFFFA;
+}
+
+.botonBlog:hover {
+  color: #FCAC21 !important;
+  background: #F7FDFF;
+  border: 2px solid orange;
+}
+
+.pagination {
+  margin-right: 150px;
+}
+
+.pagination a.page-link {
+  color: gray;
+  border: gray;
+  box-shadow: none;
+}
+
+/* Cambiar el color de los enlaces de página al pasar el cursor sobre ellos */
+.pagination a.page-link:hover {
+  color: orange;
+}
+
+.gridblog {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 50px;
+}
+
+.grid-itemb {
+  grid-column: 1/-1; /* Ocupa todas las columnas */
+  justify-self: center; /* Centra horizontalmente dentro de la columna */
+}
+
+.gridblog seccionBlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .seccionBlog {
+    width: 100%;
+    padding: 0 10px 20px 10px;
+  }
+  .contImagen div img {
+    width: 100%;
+    height: auto;
+  }
+  .gridblog {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+  .grid-itemb {
+    justify-self: stretch; /* Amplía para ocupar el ancho completo */
+  }
+  .pagination {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+/* estilos de la pagina nosotros html */
+/* estilos de la primera seccion */
+section .nosotros {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+section .contenidoNosotros {
+  width: 600px;
+  margin: auto 20px;
+}
+section .contenidoNosotros img {
+  width: 600px;
+}
+section .nosotros2 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+section .historia {
+  display: flex;
+  justify-content: center;
+}
+section .contenidoHistoria {
+  width: 1200px;
+}
+section .gridnosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+section .h2nosotros {
+  text-align: center;
+  margin: 40px auto;
+  font-family: Old Standard TT;
+  font-size: 30px;
+}
+section .h2Contacto {
+  text-align: center;
+  margin: 40px auto;
+  font-family: Old Standard TT;
+  font-size: 30px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .nosotros {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contenidoNosotros {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .contenidoNosotros img {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .gridnosotros {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
+  .contenidoHistoria {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/* estilos de la pagina contactos html */
+/* estilos de la primera seccion */
+section .contenedorForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+section .contenedorForm .form input {
+  margin: 2px auto;
+  border-radius: 1px black solid;
+  border: 1px black solid;
+}
+section .textarea {
+  margin: 2px auto;
+  border-radius: 1px black solid;
+  border: 1px black solid;
+}
+section .nombresyapellidos {
+  height: 20px;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
+section .correoText {
+  height: 20px;
+  width: 610px;
+}
+section .subt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section .textapellido {
+  margin: 0 240px 0 0;
+}
+section .mensaje {
+  width: 610px;
+}
+section .ingresarCorreo {
+  width: 820px;
+}
+section .texTareaContacto {
+  width: 820px;
+  height: 100px;
+}
+section .botonContacto {
+  font-family: georgia;
+  font-weight: bold;
+  color: #FFFFF5 !important;
+  font-size: 14px;
+  text-shadow: 0px 0px 0px #F5FEFF;
+  box-shadow: 0px 0px 0px #FFFFFA;
+  padding: 13px 20px;
+  border-radius: 40px;
+  border: 0px solid #3866A3;
+  background: #FFAF47;
+  margin-top: 15px;
+}
+section .botonContacto:hover {
+  color: #FEFFFC !important;
+  background: #172F45;
+}
+
+section .ingresarCorreo, .Nombre {
+  background-color: transparent;
+  border: 0 !important;
+  border-bottom: 2px black solid !important;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.texTareaContacto {
+  box-shadow: none !important;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    width: 200px;
+  }
+}
+@media (min-width: 780px) and (max-width: 990px) {
+  .form-control {
+    width: 300px;
+  }
+  .ingresarCorreo {
+    width: 620px;
+  }
+}
+@media (min-width: 260px) and (max-width: 460px) {
+  .form-control {
+    width: 100px;
+  }
+}
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedorForm form {
+    max-width: 100%;
+  }
+  .nombresyapellidos, .correoText, .ingresarCorreo, .texTareaContacto {
+    width: 100%;
+    margin: 5px auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
