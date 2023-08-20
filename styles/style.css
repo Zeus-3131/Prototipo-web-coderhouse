@@ -130,9 +130,41 @@ header .content {
     display: flex !important;
   }
 }
-@media (max-width: 540px) {
+@media (min-width: 471px) and (max-width: 545px) {
   .navbar-collapse {
     margin-right: 350px;
+  }
+  header .redes, .bloque3 {
+    display: none;
+  }
+}
+@media (min-width: 420px) and (max-width: 471px) {
+  .navbar-collapse {
+    margin-right: 300px;
+  }
+  header .redes, .bloque3 {
+    display: none;
+  }
+}
+@media (min-width: 355px) and (max-width: 420px) {
+  .navbar-collapse {
+    margin-right: 250px;
+  }
+  header .redes, .bloque3 {
+    display: none;
+  }
+}
+@media (min-width: 290px) and (max-width: 355px) {
+  .navbar-collapse {
+    margin-right: 200px;
+  }
+  header .redes, .bloque3 {
+    display: none;
+  }
+}
+@media (min-width: 240px) and (max-width: 290px) {
+  .navbar-collapse {
+    margin-right: 150px;
   }
   header .redes, .bloque3 {
     display: none;
@@ -576,6 +608,9 @@ section .formCategorias li {
 }
 /* estilos de la pagina nosotros html */
 /* estilos de la primera seccion */
+section {
+  /* Estilos para pantallas pequeñas */
+}
 section .nosotros {
   display: flex;
   justify-items: center;
@@ -619,30 +654,29 @@ section .h2Contacto {
   font-family: Old Standard TT;
   font-size: 30px;
 }
-
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
-  .nosotros {
+  section .nosotros {
     flex-direction: column;
     text-align: center;
   }
-  .contenidoNosotros {
+  section .contenidoNosotros {
     width: 100%;
     margin: 20px 0;
   }
-  .contenidoNosotros img {
+  section .contenidoNosotros img {
     width: 100%;
     margin: 20px 0;
   }
-  .gridnosotros {
+  section .gridnosotros {
     grid-template-columns: 1fr;
     margin-bottom: 20px;
   }
-  .contenidoHistoria {
+  section .contenidoHistoria {
     width: 100%;
     padding: 0 20px;
   }
 }
+
 /* estilos de la pagina contactos html */
 /* estilos de la primera seccion */
 section {
