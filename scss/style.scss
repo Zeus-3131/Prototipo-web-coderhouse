@@ -1,10 +1,17 @@
+// reset de las paginas
 @import "general";
-@import "header";
-@import "carrusel";
-@import "productos";
-@import "suscripcion";
-@import "footer";
-@import "seccion_coleccion";
+
+// la cabecera, panel de suscripcion y pie de pagina de todas las paginas
+@import "header", "suscripcion","footer" ;
+
+// pagina index y coleccion
+@import "carrusel", "productos", "seccion_coleccion" ;
+
+// pagina blog
 @import "seccion_blog";
+
+// pagina nosotros
 @import "seccion_nosotros";
+
+// pagina contacto
 @import "seccion_contacto";
