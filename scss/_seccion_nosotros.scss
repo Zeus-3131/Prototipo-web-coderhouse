@@ -42,10 +42,8 @@ section {
     }
   
     .h2nosotros {
-      text-align: center;
       margin: 40px auto;
-      font-family: Old Standard TT;
-      font-size: 30px;
+      @include titulos;
     }
 
     .h2Contacto {

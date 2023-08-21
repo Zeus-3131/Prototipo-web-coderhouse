@@ -14,3 +14,10 @@ body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
+
+// mixins 
+@mixin titulos {
+    text-align: center;
+    font-family: Old Standard TT;
+    font-size: 30px;
+  }

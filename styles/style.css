@@ -200,6 +200,15 @@ header .content {
   width: 400px;
 }
 
+.botonSuscripcion {
+  background-color: black;
+  border: none;
+}
+
+.botonSuscripcion:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 @media (max-width: 530px) {
   .form-control {
     width: 200px;
@@ -643,8 +652,8 @@ section .gridnosotros {
   margin-bottom: 100px;
 }
 section .h2nosotros {
-  text-align: center;
   margin: 40px auto;
+  text-align: center;
   font-family: Old Standard TT;
   font-size: 30px;
 }

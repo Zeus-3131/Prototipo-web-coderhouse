@@ -2,9 +2,7 @@
 
 section {
     h3 {
-      text-align: center;
-      font-family: Old Standard TT;
-      font-size: 30px;
+      @include titulos;
     }
   
     .linea {
