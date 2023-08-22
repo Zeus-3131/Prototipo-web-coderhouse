@@ -23,6 +23,11 @@
     width: 400px;
 }
 
+.form-control:focus{
+  box-shadow: none;
+  border-color: gray !important;
+}
+
 .botonSuscripcion{
   background-color: black;
   border: none;
