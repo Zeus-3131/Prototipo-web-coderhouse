@@ -76,20 +76,23 @@ footer {
       margin: 15px;
     }
   
-    .kedin:hover {
-      color: #019ad2;
+    .kedin:hover,.tw:hover,.fa:hover {
+      color: $redesazul;
     }
   
-    .rest:hover {
-      color: #eb1414;
+    .rest:hover,.tube:hover {
+      color: $redesrojo;
     }
   
     .basket:hover {
-      color: orange;
+      color: $redesnaranja;
     }
   
     .sapp:hover {
-      color: rgb(26, 241, 26);
+      color:$redesverde;
+    }
+    .ins:hover {
+      color:$redescafe;
     }
   
     .grid-container {

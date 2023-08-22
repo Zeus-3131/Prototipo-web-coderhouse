@@ -288,10 +288,10 @@ footer .iconosPie li i {
 footer .iconosRedes li {
   margin: 15px;
 }
-footer .kedin:hover {
+footer .kedin:hover, footer .tw:hover, footer .fa:hover {
   color: #019ad2;
 }
-footer .rest:hover {
+footer .rest:hover, footer .tube:hover {
   color: #eb1414;
 }
 footer .basket:hover {
@@ -299,6 +299,9 @@ footer .basket:hover {
 }
 footer .sapp:hover {
   color: rgb(26, 241, 26);
+}
+footer .ins:hover {
+  color: brown;
 }
 footer .grid-container {
   display: grid;
