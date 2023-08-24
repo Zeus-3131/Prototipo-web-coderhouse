@@ -1,83 +1,160 @@
+// /* estilos de la pagina nosotros html */
+
+// /* estilos de la primera seccion */
+
+// section {
+//     .nosotros {
+//       display: flex;
+//       justify-items: center;
+//       align-items: center;
+//       justify-content: space-evenly;
+//     }
+  
+//     .contenidoNosotros {
+//       width: 600px;
+//       margin: auto 20px;
+  
+//       img {
+//         width: 600px;
+//       }
+//     }
+  
+//     .nosotros2 {
+//       display: flex;
+//       justify-items: center;
+//       align-items: center;
+//       flex-direction: row-reverse;
+//     }
+  
+//     .historia {
+//       display: flex;
+//       justify-content: center;
+//     }
+  
+//     .contenidoHistoria {
+//       width: 1200px;
+//     }
+  
+//     .gridnosotros {
+//       display: grid;
+//       grid-template-columns: 1fr 1fr;
+//       margin-bottom: 100px;
+//     }
+  
+//     .h2nosotros {
+//       margin: 40px auto;
+//       @include titulos;
+//     }
+
+//     .h2Contacto {
+//         text-align: center;
+//         margin: 40px auto;
+//         font-family: Old Standard TT;
+//         font-size: 30px;
+//       } 
+  
+//   /* Estilos para pantallas pequeñas */
+//   @media (max-width: 768px) {
+//     .nosotros {
+//       flex-direction: column;
+//       text-align: center;
+//     }
+  
+//     .contenidoNosotros {
+//       width: 100%;
+//       margin: 20px 0;
+  
+//       img {
+//         width: 100%;
+//         margin: 20px 0;
+//       }
+//     }
+  
+//     .gridnosotros {
+//       grid-template-columns: 1fr;
+//       margin-bottom: 20px;
+//     }
+  
+//     .contenidoHistoria {
+//       width: 100%;
+//       padding: 0 20px;
+//     }
+//   }
+// }
+
 /* estilos de la pagina nosotros html */
 
 /* estilos de la primera seccion */
-
 section {
-    .nosotros {
-      display: flex;
-      justify-items: center;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-  
-    .contenidoNosotros {
-      width: 600px;
-      margin: auto 20px;
-  
-      img {
-        width: 600px;
-      }
-    }
-  
-    .nosotros2 {
-      display: flex;
-      justify-items: center;
-      align-items: center;
-      flex-direction: row-reverse;
-    }
-  
-    .historia {
-      display: flex;
-      justify-content: center;
-    }
-  
-    .contenidoHistoria {
-      width: 1200px;
-    }
-  
-    .gridnosotros {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 100px;
-    }
-  
-    .h2nosotros {
-      margin: 40px auto;
-      @include titulos;
-    }
+  /* Estilos generales */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    .h2Contacto {
-        text-align: center;
-        margin: 40px auto;
-        font-family: Old Standard TT;
-        font-size: 30px;
-      } 
-  
-  /* Estilos para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .nosotros {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .contenidoNosotros {
-      width: 100%;
-      margin: 20px 0;
-  
-      img {
-        width: 100%;
-        margin: 20px 0;
-      }
-    }
-  
-    .gridnosotros {
+/* Estilos compartidos para .nosotros y .nosotros2 */
+.nosotros,
+.nosotros2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Estilos para .nosotros */
+.nosotros {
+  justify-content: space-evenly;
+}
+
+/* Estilos para .nosotros2 */
+.nosotros2 {
+  flex-direction: column;
+}
+
+/* Estilos compartidos para .contenidoNosotros y .contenidoHistoria */
+.contenidoNosotros,
+.contenidoHistoria {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Estilos para imágenes */
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+/* Estilos para .gridnosotros */
+.gridnosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+/* Estilos para títulos */
+.h2nosotros,
+.h2Contacto {
+  margin: 40px auto;
+  font-family: "Old Standard TT", serif;
+  font-size: 30px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .gridnosotros {
       grid-template-columns: 1fr;
       margin-bottom: 20px;
-    }
-  
-    .contenidoHistoria {
-      width: 100%;
-      padding: 0 20px;
-    }
+  }
+
+.contenidoNosotros, .contenidoHistoria, .nosotros {
+    flex-direction: column;
+    text-align: center;
   }
 }
