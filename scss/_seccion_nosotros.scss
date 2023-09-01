@@ -1,7 +1,7 @@
 /* estilos de la pagina nosotros html */
 
 /* estilos de la primera seccion */
-section {
+.sectionNosotros, .h2nosotros, .historia, .h2Contacto {
   /* Estilos generales */
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@ section {
 }
 
 /* Estilos para imágenes */
-img {
+.imgNosotros {
   width: 100%;
   max-width: 100%;
   height: auto;
