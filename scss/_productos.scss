@@ -37,6 +37,24 @@ section {
         height: 500px;
       }
     }
+
+    .categoriaProduc{
+      h6{
+        color: #999;
+        font-size: .8rem;
+        font-style: inherit;
+      }
+      h6:hover{
+        color: orange;
+      }
+    }
+
+    .precioProduc{
+      h6{
+        color: orange;
+      }
+    }
+    
   
     .productos {
       padding: 0;
