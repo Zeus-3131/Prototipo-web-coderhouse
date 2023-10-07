@@ -41,7 +41,10 @@
                                 <a class="nav-link" href="pages/contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping fa-lg"></i></a>
+                                <a class="nav-link" href="pages/compras.html"><i class="fa-solid fa-bag-shopping fa-lg"></i></a> 
+                                <div class="notificacion" id="notificacion">0</div>
+                                <div id="carrito5"></div>
+                                <h6>Total del Carrito: $<span id="totalCarrito">0</span></h6>
                             </li>
                         </ul>
                     </nav>
@@ -106,7 +109,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Clásicos</h6></li>
                                 <li><h6>Elegancia Suprema</h6></li>
                                 <li class="precioProduc"><h6>$4,500,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Elegancia Suprema', 'imagen3.jpg', 4500000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro2"><ul>
@@ -114,7 +117,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Deportivos</h6></li>
                                 <li><h6>Esplendor Real</h6></li>
                                 <li class="precioProduc"><h6>$6,200,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Esplendor Real', 'imagen3.jpg', 6200000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro3"><ul>
@@ -122,7 +125,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo para Mujeres</h6></li>
                                 <li><h6>Diamante Brillante</h6></li>
                                 <li class="precioProduc"><h6>$5,750,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Diamante Brillante', 'imagen3.jpg', 5750000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro4"><ul>
@@ -130,7 +133,7 @@
                                 <li class="categoriaProduc"><h6> Relojes de Lujo Vintage</h6></li>
                                 <li><h6>Lujo Clásico</h6></li>
                                 <li class="precioProduc"><h6>$9,800,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Lujo Clásico', 'imagen3.jpg', 9800000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro5"><ul>
@@ -138,7 +141,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Deportivos</h6></li>
                                 <li><h6>Eterno Prestigio</h6></li>
                                 <li class="precioProduc"><h6>$8,950,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Eterno Prestigio', 'imagen3.jpg', 8950000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro6"><ul>
@@ -146,7 +149,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Vintage</h6></li>
                                 <li><h6>Prestigio</h6></li>
                                 <li class="precioProduc"><h6>$4,200,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Prestigio', 'imagen3.jpg', 4200000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro7"><ul>
@@ -154,7 +157,7 @@
                                 <li class="categoriaProduc"h6>Relojes de Lujo de Diseñador</h6></li>
                                 <li><h6>Platino Exquisito</h6></li>
                                 <li class="precioProduc"><h6>$7,500,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Platino Exquisito', 'imagen3.jpg', 7500000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro8"><ul>
@@ -162,7 +165,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo de Diseñador</h6></li>
                                 <li><h6>Prestigio Dorado</h6></li>
                                 <li class="precioProduc"><h6>$10,500,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Prestigio Dorado', 'imagen3.jpg', 10500000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro9"><ul>
@@ -170,7 +173,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Modernos</h6></li>
                                 <li><h6>Perla Preciosa</h6></li>
                                 <li class="precioProduc"><h6>$12,000,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Perla Preciosa', 'imagen3.jpg', 12000000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro10"><ul>
@@ -178,7 +181,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Modernos</h6></li>
                                 <li><h6>Imperial Grande</h6></li>
                                 <li class="precioProduc"><h6>$8,900,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Imperial Grande', 'imagen3.jpg', 8900000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro11"><ul>
@@ -186,7 +189,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo con Diamantes</h6></li>
                                 <li><h6>Diamante Azul</h6></li>
                                 <li class="precioProduc"><h6>$5,600,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Diamante Azul', 'imagen3.jpg', 5600000)">Añadir al carrito</button></li>
                             </ul></span></li>
 
                             <li><span class="caja pro12"><ul>
@@ -194,7 +197,7 @@
                                 <li class="categoriaProduc"><h6>Relojes de Lujo Modernos</h6></li>
                                 <li><h6>Elite Majestuoso</h6></li>
                                 <li class="precioProduc"><h6>$11,800,000 COP</h6></li>
-                                <li><button type="button" class="btn botonCompra">Añadir al carrito</button></li>
+                                <li><button type="button" class="btn botonCompra" onclick="agregarAlCarrito('Elite Majestuoso', 'imagen3.jpg', 11800000)">Añadir al carrito</button></li>
                             </ul></span></li>
                         </ul>
                     </div>
@@ -281,6 +284,7 @@
             </footer>           
         </div>
     </div>
+    <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
